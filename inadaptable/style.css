@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("assets/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* capa oscura para contraste */
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* contenedor principal */
+.container {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.75);
+  border: 2px solid gold;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: #ffcb3b;
+  margin-bottom: 5px;
+}
+
+.input-area {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background: #ffcb3b;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+#suggestions {
+  position: absolute;
+  background: #2a2a2a;
+  width: 70%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  text-align: left;
+  z-index: 10;
+}
+
+#suggestions li {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+#suggestions li:hover {
+  background: #3a3a3a;
+}
+
+#suggestions img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.result-card {
+  background: #2d2d2f;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.result-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.cell {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.green {
+  background: #2ecc71;
+}
+
+.yellow {
+  background: #f1c40f;
+  color: #000;
+}
+
+.red {
+  background: #e74c3c;
+}
+
+/* Modal de victoria */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #2b2b2d;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background: #ffcb3b;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== Encabezado de columnas ===== */
+.header-row {
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid gold;
+  font-weight: bold;
+  color: gold;
+}
+
+.header-row .cell {
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}

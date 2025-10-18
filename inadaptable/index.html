@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inadaptadle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Inadaptadle</h1>
+      <p>Adivina qué amigo es el correcto</p>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="guess"
+          placeholder="Escribe un apodo..."
+          autocomplete="off"
+        />
+        <button id="submit-btn">Comprobar</button>
+        <ul id="suggestions"></ul>
+      </div>
+
+      <!-- 🔹 Encabezados de las columnas -->
+      <div id="headers" class="result-card header-row">
+        <div class="cell">Avatar</div>
+        <div class="cell">Apodo</div>
+        <div class="cell">Se unio en</div>
+        <div class="cell">Juega</div>
+        <div class="cell">Personalidad</div>
+        <div class="cell">¿Tiene pareja?</div>
+      </div>
+
+      <!-- 🔹 Resultados del juego -->
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
